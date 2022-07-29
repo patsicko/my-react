@@ -9,7 +9,22 @@ const MyColor=()=>{
 
   const[color,setColor]=useState("");
 
+
+  const[name,setName]=useState("Patsicko");
+  const[company,setCompany]=useState("PatsiTech");
+  const[position,setPosition]=useState("CEO");
+
+  const[address,setAdress]=useState({
+    name:"Patrick",
+    age:15,
+    position:"CEO"
+  })
+
   return (<>
+
+  <p>My name is {name} <br/> I work in {company} and I am a {company} {position}</p>
+
+  <p> I am {address.name} {address.age} years old and I am  a {address.position}</p>
   <p>my favorite color is {color}</p>
 
   <button type="button" onClick={()=>{setColor("blue")}}>Blue</button> <br/><br/>
@@ -21,7 +36,6 @@ const MyColor=()=>{
 
 
 }
-
 
 ReactDOM.createRoot(document.getElementById("root")).render(<MyColor/>)
 
