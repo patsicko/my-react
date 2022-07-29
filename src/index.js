@@ -7,7 +7,7 @@ import './index.css';
 const MyColor=()=>{
 
 
-  const[color,setColor]=useState("green");
+  const[color,setColor]=useState("");
 
   return (<>
   <p>my favorite color is {color}</p>
@@ -16,7 +16,7 @@ const MyColor=()=>{
   <button type="button" onClick={()=>{setColor("red")}}>Red</button><br/><br/>
   <button type="button" onClick={()=>{setColor("orange")}} >Orange</button><br/><br/>
   <button type="button" onClick={()=>{setColor("yellow")}} >Orange</button><br/><br/>
-  <button type="button" onClick={()=>{setColor("gray")}} >Orange</button><br/><br/>
+  <button type="button" onClick={()=>{setColor("gray")}} >grey</button><br/><br/>
   </>);
 
 
