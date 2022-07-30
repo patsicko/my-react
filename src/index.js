@@ -1,10 +1,29 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { render } from 'react-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Change from './Change';
 import Reduced from './Reduced';
+
+
+const Timer=()=>{
+
+const[count,setCount]=useState(0);
+
+useEffect(()=>{
+setTimeout(()=>{
+setCount((count=>count+1));
+},1000);
+});
+
+
+
+return <div>
+<h1>I will count {count} times</h1>
+</div>
+}
+
 
 const MyColor=()=>{
 
@@ -40,6 +59,7 @@ const MyColor=()=>{
   return (<>
  <Change/> <br/><br/>
  <Reduced/><br/> <br/>
+ <Timer/><br/> <br/>
 
   My name is {name} <br/> I work in {company} and I am a {company} {position}<br/>
 
