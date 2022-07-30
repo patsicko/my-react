@@ -4,6 +4,7 @@ import { render } from 'react-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Change from './Change';
+import Reduced from './Reduced';
 
 const MyColor=()=>{
 
@@ -37,7 +38,8 @@ const MyColor=()=>{
 
 
   return (<>
- <Change/>
+ <Change/> <br/><br/>
+ <Reduced/><br/> <br/>
 
   My name is {name} <br/> I work in {company} and I am a {company} {position}<br/>
 
