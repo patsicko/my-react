@@ -10,13 +10,10 @@ const[text,setText]=useState("your text");
 
     return(
         <div className="textarea" >
-
-
-   
-         
+    
 <input className="text" type="text"  placeholder="type the text here"  onChange={e=>setText(e.target.value.length)} /> <br/>
 <br/>
-   Number of leters: {text}
+   Number of letters: {text}
 
         </div>
     );

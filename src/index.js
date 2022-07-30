@@ -22,35 +22,28 @@ const MyColor=()=>{
 
 
    const changePosition=()=>{
-    setAdress(CEO=>{
-      return{CEO,position:"Tech Lead"}
-    })
+    setAdress(previousState=>{return{...previousState,position:"DG"}})
+
+ 
    }
 
-const changeAge=()=>{
-  setAdress(prev=>{
-   return{prev,age:20}
-  })
-}
+// const changeAge=()=>{
+//   setAdress(prev=>{
+//    return{prev,age:20}
+//   })
+// }
 
-  const change=()=>{
-    
-  }
+
 
 
   return (<>
  <Change/>
 
-  <p>My name is {name} <br/> I work in {company} and I am a {company} {position}</p>
+  My name is {name} <br/> I work in {company} and I am a {company} {position}<br/>
 
-  <p> I am {address.name} {address.age} years old and I am  a {address.position}</p>
-  <p>my favorite color is {color}</p>
-
+   I am {address.name} {address.age} years old and I am  a {address.position}<br/>
+  my favorite color is {color}<br/>
   <button type="button" onClick={changePosition} >change position</button><br/><br/>
-
-
-
-
 
 
   <button type="button" onClick={()=>{setColor("blue")}}>Blue</button> <br/><br/>
